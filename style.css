@@ -9,7 +9,8 @@ body {
 /* Navbar */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    gap: 300px;
+   
     align-items: center;
     background: #ffffff;
     padding: 15px 50px;
@@ -18,6 +19,11 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
+}
+.logo-school{
+   display: flex;
+    gap: 5px;
+   align-items: center;
 }
 
 .logo {
@@ -47,10 +53,11 @@ body {
     background: #ff9800;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 60.5px;
     cursor: pointer;
     border-radius: 5px;
 }
+
 
 .menu-icon {
     display: none;
