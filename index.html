@@ -1,11 +1,102 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assigment 2</title>
+    <title>School Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">SCHOOL</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Facilities</a></li>
+            <li><a href="#">Admission</a></li>
+        </ul>
+        <button class="contact-btn">Contact</button>
+        <div class="menu-icon">&#9776;</div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="banner">
+        <div class="banner-image">
+            <img src="child-image.png" alt="Child Superhero">
+        </div>
+        <div class="banner-content">
+            <h1>Empowering <span class="highlight">students</span> from small age <span class="blue-text">towards vision</span></h1>
+            <p>With courage, confidence, creativity, and compassion to make their unique contribution in a diverse and dynamic world.</p>
+            <button class="enroll-btn">Enroll Now</button>
+        </div>
+    </header>
+
+    <!-- Standard Curriculum Section -->
+    <section class="curriculum">
+        <h2>Standard Curriculum</h2>
+        <div class="curriculum-cards">
+            <div class="card">
+                <img src="kinder-icon.png" alt="Kinder">
+                <h3>Kinder (3-6) Years</h3>
+                <p>Basic learning for young children.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="card">
+                <img src="elementary-icon.png" alt="Elementary">
+                <h3>Elementary School</h3>
+                <p>Foundational subjects for primary students.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="card">
+                <img src="middle-icon.png" alt="Middle">
+                <h3>Middle (10-16) Years</h3>
+                <p>Advanced studies and skill development.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+      <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo & About -->
+            <div class="footer-logo">
+                <img src="logo.png" alt="Kids Education Logo">
+                <h2>Kids <span class="highlight">Education</span></h2>
+                <p>Pizza ipsum dolor meat lovers buffalo. Deep dolor roll melted bacon Bianca pan bacon pineapple Aussie. Mayo rib sauce Hawaiian meatball.</p>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="footer-nav">
+                <h3>About School</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">Admission</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <h3>Keep In Touch</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="dribbble-icon.png" alt="Dribbble"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="googleplus-icon.png" alt="Google Plus"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
+    

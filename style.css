@@ -1,0 +1,305 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-btn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 100px 20px 50px;
+    background: #f5f5f5;
+}
+
+.banner-content {
+    max-width: 50%;
+}
+
+.banner-content h1 {
+    font-size: 36px;
+}
+
+.highlight {
+    color: #f4a261;
+}
+
+.blue-text {
+    color: #1e88e5;
+}
+
+.enroll-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.banner-image {
+    text-align: center;
+}
+
+.banner-image img {
+    width: 300px;
+    max-width: 100%;
+}
+
+/* Curriculum Section */
+.curriculum {
+    text-align: center;
+    padding: 50px;
+    background: white;
+}
+
+.curriculum-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 50px;
+}
+
+.card a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-image {
+        order: -1;
+    }
+
+    .banner-image img {
+        width: 250px;
+    }
+
+    .banner-content {
+        max-width: 100%;
+    }
+
+    .curriculum-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f5f5f5;
+}
+
+/* Footer Section */
+.footer {
+    background: #40a9ff;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Footer Logo & About */
+.footer-logo {
+    max-width: 300px;
+}
+
+.footer-logo img {
+    width: 50px;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.highlight {
+    color: yellow;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Footer Navigation */
+.footer-nav h3,
+.footer-social h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    margin-bottom: 5px;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo,
+    .footer-nav,
+    .footer-social {
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    /* Adjusting Font Sizes for Mobile */
+    .footer-logo h2 {
+        font-size: 20px;
+    }
+
+    .footer-logo p {
+        font-size: 12px;
+    }
+
+    .footer-nav h3,
+    .footer-social h3 {
+        font-size: 16px;
+    }
+
+    .footer-nav ul li a {
+        font-size: 12px;
+    }
+
+    .social-icons a img {
+        width: 25px;
+    }
+}
